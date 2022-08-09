@@ -1,4 +1,4 @@
-/*Queries that provide answers to the questions from all projects.
+/*Queries that provide answers to the questions from all projects.*/
 
 SELECT * FROM animals WHERE name LIKE '%mon';
 SELECT name, date_of_birth FROM animals WHERE date_of_birth BETWEEN '2016-01-01' AND '2019-01-01';
@@ -94,9 +94,9 @@ SELECT o.full_name AS "OWNER NAME", COUNT(a.name) as "NUMBER OF ANIMALS" FROM ow
     ON a.owner_id = o.id
     GROUP BY o.full_name
     ORDER BY COUNT(a.name) DESC;
-*/
 
-/*SELECT vets.name AS "VET NAME", animals.name AS "ANIMAL NAME", visits.date_of_visit AS "DATE OF VISIT" FROM vets
+
+SELECT vets.name AS "VET NAME", animals.name AS "ANIMAL NAME", visits.date_of_visit AS "DATE OF VISIT" FROM vets
     JOIN visits
     ON vets.id = visits.vet_id
     JOIN animals
@@ -181,7 +181,6 @@ SELECT animals.name AS "ANIMAL NAME",
     GROUP BY visits.animal_id, visits.vet_id, animals.name,
     specializations.species_id, vets.name, animals.species_id
     ORDER BY COUNT(visits.animal_id) DESC;
-*/
 
 SELECT species.name AS "SPECIES TYPE",
     COUNT(visits.animal_id) AS "NUMBER OF VISITS",
