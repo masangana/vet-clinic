@@ -34,6 +34,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Microverse
+- Schema Diagram: (drawSQL)[https://drawsql.app/]
 
 ## 📝 License
 
