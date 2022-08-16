@@ -1,5 +1,5 @@
 /*Queries that provide answers to the questions from all projects.*/
-
+/*
 SELECT * FROM animals WHERE name LIKE '%mon';
 SELECT name, date_of_birth FROM animals WHERE date_of_birth BETWEEN '2016-01-01' AND '2019-01-01';
 SELECT name, neutered, escape_attempts FROM animals WHERE neutered = 'TRUE' AND escape_attempts < 3;
@@ -195,3 +195,6 @@ SELECT species.name AS "SPECIES TYPE",
     GROUP BY vets.name, animals.species_id, species.name
     ORDER BY animals.species_id DESC
     LIMIT 1;
+*/
+
+explain analyze SELECT * FROM visits where vet_id = 2;
